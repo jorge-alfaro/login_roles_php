@@ -1,0 +1,299 @@
+/* GENERALES */
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Courier New", Courier, monospace;
+}
+
+body {
+  background: url(../img/metal.jpg);
+  background-color: #2c2a2a;
+  color: black;
+}
+a {
+  color: gray;
+}
+a:visited {
+  color: gray;
+}
+
+a:hover {
+  color: white;
+  text-shadow: 1px 1px 2px black, 0 0 1em tomato, 0 0 0.2em tomato;
+}
+/* CONTAINER*/
+#Bloque_container {
+  width: 80%;
+  margin: 0px auto;
+  box-shadow: 0px 0px 10px gray;
+  background: white;
+}
+
+/* HEADER */
+
+#header {
+  height: 100px;
+  background: url(../img/fire50.png);
+}
+#logo {
+  padding: 10px;
+  margin-left: 20px;
+  float: left;
+}
+#logo img {
+  height: 70px;
+  float: left;
+}
+#logo a {
+  float: left;
+  font-size: 30px;
+  letter-spacing: 4px;
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+  color: tomato;
+  font-weight: bold;
+  text-decoration: none;
+  margin-top: 15px;
+  margin-left: 10px;
+  text-shadow: 1px 1px 1px #222222;
+}
+#logo a:hover {
+  text-shadow: 1px 1px 1px #222222, 0px 0px 4px tomato;
+}
+
+.ingreso {
+  background-color: rgba(255, 99, 71, 0.596);
+}
+
+/* MENU */
+
+#menu {
+  background: #222;
+  color: white;
+  height: 55px;
+  border-bottom: 4px solid tomato;
+}
+
+#menu ul {
+  list-style: none;
+  text-decoration: none;
+  margin: 0px auto;
+  margin-left: 25px;
+}
+
+#menu ul li {
+  line-height: 55px;
+  float: left;
+  border-right: 1px solid #363636;
+}
+
+#menu a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  padding-left: 15px;
+  padding-right: 15px;
+  transition: all 300ms;
+}
+#menu a:first-child {
+  border-left: 1px solid #363636;
+}
+
+#menu a:hover {
+  background: tomato;
+}
+
+/* CONTENT */
+
+#Contenido-info {
+  margin: 0px auto;
+  overflow: hidden;
+  background: white;
+}
+
+#lateral {
+  width: 17%;
+  min-height: 500px;
+  float: left;
+  margin-top: 20px;
+  margin-left: 10px;
+}
+
+#lateral.block_aside {
+  display: block;
+  width: 90%;
+  margin: 5px auto;
+  padding: 10px;
+  /* border: 1px solid orangered; */
+}
+
+#lateral h4 {
+  display: block;
+  color: #222;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  margin-bottom: 15px;
+  font-size: 20px;
+  background: #e1e1e1;
+  border-bottom: 2px solid tomato;
+}
+
+#info_enlaces li,
+button {
+  display: block;
+  margin-left: 15px;
+  margin-top: 10px;
+}
+#info_enlaces button {
+  width: 80%;
+  text-align: center;
+}
+
+#Contenid_central {
+  width: 79%;
+  min-height: 540px;
+  float: right;
+  border-left: 1px solid #ccc;
+  box-shadow: -5px -1px 5px #ddd;
+  padding: 20px;
+  background-color: #363636;
+}
+
+#Contenid_central h1 {
+  font-size: 24px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-align: center;
+  border-bottom: 1px solid tomato;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 10px;
+  padding-top: 0px;
+  color: rgba(255, 99, 71, 0.623);
+}
+
+/* LOGIN TITLE */
+.login-box-msg,
+.register-box-msg {
+  font-weight: bold;
+}
+
+/* LOGIN MENSAJE DE ERRROR*/
+.fallido {
+  color: red;
+}
+
+/* REGISTRO USERS*/
+.Datos_correctos{
+    color:rgb(44, 202, 44);
+}
+/* paginas de img */
+.imagen-page img {
+  width: 100%;
+}
+
+.imagen-page-admin {
+  align-items: center;
+  text-align: center;
+}
+.imagen-page-admin img {
+  width: 30%;
+}
+
+/* PAGINA DE TIENDA*/
+
+.caja {
+  border: 1px solid #999;
+  padding: 1em;
+  color: tomato;
+  width: 25%;
+  box-sizing: border-box; /*Para que se respete el ancho de la caja*/
+  float: left; /* divicion perfecta /// margin:0.5% // restar 1% en width*/
+}
+.caja img {
+  max-width: 100%;
+}
+
+/* PAGINA DE COMPRAS */
+.kimetsu {
+  /* width: 950px; */
+  width: 125px;
+  height: 500px;
+
+  top: 70px;
+  right: 0;
+  left: 0;
+  bottom: 0;
+
+  position: absolute;
+  margin: auto;
+  background-color: black;
+
+  background-image: url(../img/pilares.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  animation: slider 10s infinite alternate;
+}
+
+@keyframes slider {
+  from {
+    background-position: left center;
+  }
+  to {
+    background-position: right center;
+  }
+}
+
+/* FOOTER */
+
+#footer {
+  clear: both;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: white;
+  background: #222222;
+  border-top: 2px solid tomato;
+}
+
+.login-page,
+.register-page {
+  height: 66vh;
+}
+
+/* TAMAÑOS LOGIN*/
+@media (min-width: 300px) {
+  .login-page {
+    background: #000000;
+    background-image: url(../img/bacmob.jpg);
+    background-size: contain;
+  }
+  .login-logo a,
+  .register-logo a {
+    color: #ffffff;
+  }
+}
+
+@media (min-width: 600px) {
+  .login-page,
+  .register-page {
+    background: #000000;
+    background-image: url(../img/emibacklap.png);
+    background-repeat: no-repeat, repeat;
+    background-size: contain;
+  }
+}
+
+@media (min-width: 1500px) {
+  .login-page,
+  .register-page {
+    background: #000000;
+    background-image: url(../img/emiback.png);
+    background-repeat: no-repeat, repeat;
+    background-size: contain;
+  }
+}
