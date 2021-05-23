@@ -330,9 +330,9 @@ button {
   .login-page,
   .register-page {
     background: #000000;
-    background-image: url(../img/emibacklap.png);
+    background-image: url(../img/wall.jpg);
     background-repeat: no-repeat, repeat;
-    background-size: contain;
+    background-size: cover;
   }
 }
 
@@ -340,7 +340,7 @@ button {
   .login-page,
   .register-page {
     background: #000000;
-    background-image: url(../img/emiback.png);
+    background-image: url(../img/wall.jpg);
     background-repeat: no-repeat, repeat;
     background-size: contain;
   }
